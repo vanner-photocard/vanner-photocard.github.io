@@ -7,15 +7,21 @@
     <meta charset="utf-8">
     <meta property="og:title" content="VANNER 포카 아카이브" />
     <meta property="og:description" content="VANNER 포토카드 아카이브" />
-    <meta property="og:image"
-        content="https://pbs.twimg.com/media/FxCEFRPagAIYjfD?format=png&name=900x900" />
+    <meta property="og:image" content="https://pbs.twimg.com/media/Fx675CGaUAA8pZG?format=png&name=900x900" />
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <title>VANNER 포카 아카이브</title>
     <style>
+        * {
+            font-family: "Gowun Dodum", sans-serif;
+        }
+
         img.poka {
-            width: 150px;
+            width: 200px;
             padding: 5px;
             opacity: 0.5
         }
@@ -28,10 +34,39 @@
     <h1>VANNER Photo Card ARCHIVE</h1>
 
     <p>by @NyuNyuVVS</p>
-    <h3>PEAKTIME 잠실 콘서트 트레카 [멤버 별 4종]</h3>
 
 
-    <div style="padding-bottom:30px">
+    <div id="type" style="padding: 20px;font-size: 30px;">
+
+        <div id="2023">
+            <ul>
+                <h2>PEAKTIME CONCERT</h2>
+                <li>
+                    <a href="PT_concert_trading.html">피크타임 콘서트 트레카 & 미공포</a>
+                </li>
+
+            </ul>
+            <ul>
+                <h2>PEAKTIME ALBUM</h2>
+                <li>
+                    <a href="PT_concert_trading.html">피크타임 콘서트 트레카 & 미공포</a>
+                </li>
+                <li>
+                    <a href="PT_concert_trading.html">피크타임 콘서트 트레카 & 미공포</a>
+                </li>
+                <li>
+                    <a href="PT_concert_trading.html">피크타임 콘서트 트레카 & 미공포</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+    </div>>
+
+
+    <!-- <div style="padding-bottom:30px">
         <button type="button" id="have" class="btn btn-primary">있어요</button>
         <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
         <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
@@ -57,7 +92,7 @@
         </div>
 
         <p>photo from @_hey_hye</p>
-    </div>
+    </div> -->
 
     <script>
         // 카드 폴더에서 업로드하기
@@ -79,7 +114,7 @@
                 let poka_div_id = "#" + m.substr(2)
                 $(poka_div_id).append(temp_html)
                 console.log(temp_html, poka_div_id)
-                
+
 
             }
         })
