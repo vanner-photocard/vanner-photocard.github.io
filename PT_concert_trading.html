@@ -21,45 +21,90 @@
             font-family: "Gowun Dodum", sans-serif;
         }
 
+        h1 {
+            font-weight: 800;
+            font-size: 50px;
+            /* background-color: aquamarine; */
+            
+
+        }
+
         img.poka {
             width: 200px;
             padding: 5px;
-            opacity: 0.5
+            opacity: 0.5;
+
         }
+
+        div.header {
+            padding:30px;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            background-image: linear-gradient(0deg,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.3)),
+                    url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+        }
+
+
+        div.cardHolder {
+            text-align: center;
+            margin: 50px;
+        }
+
+
     </style>
 
 </head>
 
 <body>
 
-    <h1>VANNER Photo Card ARCHIVE</h1>
 
-    <p>by @NyuNyuVVS</p>
-    <h3>PEAKTIME 잠실 콘서트 트레카 [멤버 별 4종]</h3>
-
-
-    <div style="padding-bottom:30px">
-        <button type="button" id="have" class="btn btn-primary">있어요</button>
-        <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
-        <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
-        <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
-        <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
+    <div class="header">
+        <h1 style="margin-top:175px">VANNER Photo Card ARCHIVE</h1>
+        <p>by @NyuNyuVVS</p>
     </div>
 
-    <div style="margin:20px;">
-        <div id="TAE">
-            <b>태환</b>
+    <div >
+
+    </div>
+
+    <div class="cardHolder">
+        <h3>PEAKTIME 잠실 콘서트 트레카 [멤버 별 4종]</h3>
+
+        <div class="cardModeButton">
+            <button type="button" id="have" class="btn btn-primary">있어요</button>
+            <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
+            <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
+            <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
+            <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
         </div>
-        <div id="GON">
+
+
+        <span>
+            <div id="TAE" class="poka-holder">
+                <b>태환</b>
+            </div>
+        </span>
+
+        <div id="GON" class="poka-holder">
             <b>원서</b>
         </div>
-        <div id="HYE">
+        <div id="HYE" class="poka-holder">
             <b>혜성</b>
         </div>
-        <div id="AHX">
+        <div id="AHX" class="poka-holder">
             <b>성국</b>
         </div>
-        <div id="YGW">
+        <div id="YGW" class="poka-holder">
             <b>영광</b>
         </div>
 
