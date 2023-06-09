@@ -1,0 +1,54 @@
+
+        * {
+            font-family: "Gowun Dodum", sans-serif;
+        }
+
+        h1 {
+            font-size: 50px;
+            background-color: rgb(255, 255, 255, 0.3);
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 60px;
+        }
+
+        img.poka {
+            width: 200px;
+            height: 300px;
+            padding: 5px;
+            opacity: 1;
+
+        }
+
+        div.header {
+            padding: 30px;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            background-image: linear-gradient(0deg,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.3)),
+                url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        div.cardModeButton {
+            text-align: center;
+            margin: 2px;
+            display: block;
+        }
+
+
+        div.cardHolder {
+            text-align: center;
+            margin: 10px;
+            /* display:inline-block; */
+        }

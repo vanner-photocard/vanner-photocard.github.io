@@ -24,15 +24,19 @@
         h1 {
             font-size: 50px;
             background-color: rgb(255, 255, 255, 0.3);
+        }
 
-
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 60px;
         }
 
         img.poka {
             width: 200px;
             height: 300px;
             padding: 5px;
-            opacity: 0.5;
+            opacity: 1;
 
         }
 
@@ -55,16 +59,18 @@
         }
 
         div.cardModeButton {
-            margin: 20px;
+            text-align: center;
+            margin: 2px;
+            display: block;
         }
 
 
         div.cardHolder {
             text-align: center;
-            margin: 50px;
+            margin: 10px;
+            /* display:inline-block; */
         }
     </style>
-
 </head>
 
 <body>
@@ -81,9 +87,13 @@
     </div>
 
     <div class="cardHolder">
-        <h3>3rd Single [Take off](롤린 Rollin)</h3>
+        <h3>3rd Single [Take off](롤린 Rollin) <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
+                숨기기/보여주기</button>
+        </h3>
 
-        <div class="cardModeButton">
+
+
+        <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
             <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
             <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
@@ -168,7 +178,16 @@
                 image.style.opacity = "0.5";
             }
         }
+        function buttonHide() {
+            let x = document.getElementById("cardModeButton");
 
+            console.log(x.style.display + " yes")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
     </script>
 

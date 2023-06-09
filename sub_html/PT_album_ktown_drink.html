@@ -16,54 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <title>VANNER 포카 아카이브</title>
-    <style>
-        * {
-            font-family: "Gowun Dodum", sans-serif;
-        }
-
-        h1 {
-            font-size: 50px;
-            background-color: rgb(255, 255, 255, 0.3);
-
-
-        }
-
-        img.poka {
-            width: 200px;
-            height: 300px;
-            padding: 5px;
-            opacity: 0.5;
-
-        }
-
-        div.header {
-            padding: 30px;
-            width: 100%;
-            height: 300px;
-            text-align: center;
-            background-image: linear-gradient(0deg,
-                    rgba(255, 255, 255, 0.3),
-                    rgba(255, 255, 255, 0.3)),
-                url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        div.cardModeButton {
-            margin: 20px;
-        }
-
-
-        div.cardHolder {
-            text-align: center;
-            margin: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="./poka_page.css">
 
 </head>
 
@@ -82,7 +35,7 @@
 
     <div class="cardHolder">
         <h3>PEAKTIME 앨범 케타포 콜라보 카페 포카</h3>
-        <p>[음 료 포 카] | [럭드 포카(아궁빵)]</p>
+        <p>[럭드 포카(아궁빵)] | [음 료 포 카]</p>
 
         <div class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
@@ -111,8 +64,11 @@
         <div id="YGW" class="poka-holder">
             <b>영광</b>
         </div>
+        <div id="ALL" class="poka-holder">
+            <b>단체</b>
+        </div>
         <br>
-        <p>photo scan by <i>@haengdobi_vivis</i></p>
+        <p>photo scan by <i>@parkhsungg, @haengdobi_vivis</i></p>
     </div>
 
     <script>
@@ -131,10 +87,23 @@
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-                temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m}.jpg" onclick="changeImage(this)">`
-                let poka_div_id = "#" + m.substr(2)
-                $(poka_div_id).append(temp_html)
-                console.log(temp_html, poka_div_id)
+
+
+                if (m != "6 ALL") {
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                } else {
+                    pkNum_byMem_temp = 1
+                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
+                        temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
+                        let poka_div_id = "#" + m.substr(2)
+                        $(poka_div_id).append(temp_html)
+                        console.log(temp_html, poka_div_id)
+                    }
+
+                }
 
 
             }
