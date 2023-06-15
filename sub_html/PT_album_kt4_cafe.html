@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <title>VANNER 포카 아카이브</title>
     <link rel="stylesheet" href="./poka_page.css">
+
 </head>
 
 <body>
@@ -33,11 +34,9 @@
     </div>
 
     <div class="cardHolder">
-        <h3>3rd Single [Take off](롤린 Rollin) <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
-                숨기기/보여주기</button>
-        </h3>
-
-
+        <h3>PEAKTIME 앨범 케타포 콜라보 카페 포카   
+        <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button></h3>
+        <p>[럭드 포카(아궁빵)] | [음 료 포 카]</p>
 
         <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
@@ -66,8 +65,11 @@
         <div id="YGW" class="poka-holder">
             <b>영광</b>
         </div>
+        <div id="ALL" class="poka-holder">
+            <b>단체</b>
+        </div>
         <br>
-        <p>photo scan by <i>@hamzzihyesung</i></p>
+        <p>photo scan by <i>@parkhsungg, @haengdobi_vivis</i></p>
     </div>
 
     <script>
@@ -80,16 +82,29 @@
         let ALL = "6 ALL"
         let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
         //멤버 별 포카 개수
-        let pkNum_byMem = 1
+        let pkNum_byMem = 3
 
         //포카 넣기
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-                temp_html = `<img class="poka" src="image/2019_2022/Rollin/${m}.jpg" onclick="changeImage(this)">`
-                let poka_div_id = "#" + m.substr(2)
-                $(poka_div_id).append(temp_html)
-                console.log(temp_html, poka_div_id)
+
+
+                if (m != "6 ALL") {
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                } else {
+                    pkNum_byMem_temp = 1
+                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
+                        temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
+                        let poka_div_id = "#" + m.substr(2)
+                        $(poka_div_id).append(temp_html)
+                        console.log(temp_html, poka_div_id)
+                    }
+
+                }
 
 
             }
@@ -124,6 +139,7 @@
                 image.style.opacity = "0.5";
             }
         }
+
         function buttonHide() {
             let x = document.getElementById("cardModeButton");
 

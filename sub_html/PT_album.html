@@ -34,10 +34,12 @@
     </div>
 
     <div class="cardHolder">
-        <h3>PEAKTIME 앨범 케타포 콜라보 카페 포카</h3>
-        <p>[럭드 포카(아궁빵)] | [음 료 포 카]</p>
+        <h3>PEAKTIME 앨범 포카
+            <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button>
+        </h3>
 
-        <div class="cardModeButton">
+
+        <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
             <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
             <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
@@ -46,11 +48,10 @@
         </div>
 
 
-        <span>
-            <div id="TAE" class="poka-holder">
-                <b>태환</b>
-            </div>
-        </span>
+
+        <div id="TAE" class="poka-holder">
+            <b>태환</b>
+        </div>
 
         <div id="GON" class="poka-holder">
             <b>원서</b>
@@ -64,11 +65,8 @@
         <div id="YGW" class="poka-holder">
             <b>영광</b>
         </div>
-        <div id="ALL" class="poka-holder">
-            <b>단체</b>
-        </div>
         <br>
-        <p>photo scan by <i>@parkhsungg, @haengdobi_vivis</i></p>
+        <p>photo scan by <i>@chunsam_VVS</i></p>
     </div>
 
     <script>
@@ -81,29 +79,16 @@
         let ALL = "6 ALL"
         let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
         //멤버 별 포카 개수
-        let pkNum_byMem = 2
+        let pkNum_byMem = 3
 
         //포카 넣기
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-
-
-                if (m != "6 ALL") {
-                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
-                    let poka_div_id = "#" + m.substr(2)
-                    $(poka_div_id).append(temp_html)
-                    console.log(temp_html, poka_div_id)
-                } else {
-                    pkNum_byMem_temp = 1
-                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
-                        temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)">`
-                        let poka_div_id = "#" + m.substr(2)
-                        $(poka_div_id).append(temp_html)
-                        console.log(temp_html, poka_div_id)
-                    }
-
-                }
+                temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/앨범/${m} (${i}).jpg" onclick="changeImage(this)">`
+                let poka_div_id = "#" + m.substr(2)
+                $(poka_div_id).append(temp_html)
+                console.log(temp_html, poka_div_id)
 
 
             }
@@ -136,6 +121,18 @@
             } else if (cardMode == "reset") {
                 image.style.backgroundColor = "rgb(255,255,255)"
                 image.style.opacity = "0.5";
+            }
+        }
+
+
+        function buttonHide() {
+            let x = document.getElementById("cardModeButton");
+
+            console.log(x.style.display + " yes")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
         }
 

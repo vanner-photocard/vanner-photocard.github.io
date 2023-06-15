@@ -17,8 +17,11 @@
         img.poka {
             width: 200px;
             height: 300px;
+            margin: 5px;
             padding: 5px;
             opacity: 1;
+            border-radius: 18px;
+            /* box-shadow: 1px 1px 0px 0px lightgrey; */
 
         }
 
