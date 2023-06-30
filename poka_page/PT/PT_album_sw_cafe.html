@@ -65,9 +65,9 @@
         <div id="YGW" class="poka-holder">
             <b>영광</b>
         </div>
-        <!-- <div id="ALL" class="poka-holder">
+        <div id="ALL" class="poka-holder">
             <b>단체</b>
-        </div> -->
+        </div>
         <br>
         <p>photo scan by <i>@chunsam_VVS | @chunsam_VVS | @parkhsungg & @Bobea_vanner</i></p>
     </div>
@@ -88,12 +88,19 @@
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
+
+                if(m != "6 ALL"){
                     temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/사웨/카페 랜포/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
                     let poka_div_id = "#" + m.substr(2)
                     $(poka_div_id).append(temp_html)
                     console.log(temp_html, poka_div_id)
-
-
+                }
+                if(m == "6 ALL"){
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/사웨/카페 랜포/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
 
             }
         })
