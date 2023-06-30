@@ -25,14 +25,14 @@
 
 
     <div class="header">
-        <h1 style="margin-top:175px">VANNER Photo Card ARCHIVE</h1>
-        <p>by @NyuNyuVVS</p>
-        <a href="/index.html">메인으로 돌아가기</a>
-    </div>
 
-    <div>
+        <h1 style="margin-top:150px">VANNER Photo Card ARCHIVE</h1>
 
+        <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
+                href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
+                <a href="/index.html" class="btn btn-outline-secondary btn-sm" >메인으로 돌아가기</a>
     </div>
+    
 
     <div class="cardHolder">
         <h3>PEAKTIME 앨범 케타포 콜라보 카페 포카   
@@ -89,18 +89,18 @@
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-
-
-
-                    pkNum_byMem_temp = 1
-                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
-                        temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
-                        let poka_div_id = "#" + m.substr(2)
-                        $(poka_div_id).append(temp_html)
-                        console.log(temp_html, poka_div_id)
-                    }
-
-                
+                    if(m != "6 ALL"){
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
+                if(m == "6 ALL"){
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/케타포 음료/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
 
 
             }
