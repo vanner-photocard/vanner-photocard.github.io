@@ -37,7 +37,7 @@
     <div class="cardHolder">
         <h3>PEAKTIME 앨범 케타포 콜라보 카페 포카   
         <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button></h3>
-        <p>[럭드 포카(아궁빵)] | [음 료 포 카]</p>
+        
 
         <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
@@ -46,13 +46,11 @@
             <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
             <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
         </div>
+        <p class="poka-info" style="margin-top:20px;font-weight:bold">[럭드 포카(아궁빵) 앞 | 뒤] • [음 료 포 카]</p>
 
-
-        <span>
             <div id="TAE" class="poka-holder">
                 <b>태환</b>
             </div>
-        </span>
 
         <div id="GON" class="poka-holder">
             <b>원서</b>
@@ -70,7 +68,7 @@
             <b>단체</b>
         </div>
         <br>
-        <p>photo scan by <i>@parkhsungg | @haengdobi_vivis</i></p>
+        <p>photo scan by <i>@parkhsungg & @Bobea_vanner | @haengdobi_vivis</i></p>
     </div>
 
     <script>
@@ -83,7 +81,7 @@
         let ALL = "6 ALL"
         let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
         //멤버 별 포카 개수
-        let pkNum_byMem = 2
+        let pkNum_byMem = 3
 
         //포카 넣기
         MEM_ARR.forEach((m) => {

@@ -31,29 +31,28 @@
 
         <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
                 href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
-                <a href="/index.html" class="btn btn-outline-secondary btn-sm" >메인으로 돌아가기</a>
+        <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기</a>
     </div>
 
     <div class="cardHolder">
         <h3> 1st Single [5cean : V] (미쳐버려)<button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
-            숨기기/보여주기</button>
-    </h3>
+                숨기기/보여주기</button>
+        </h3>
 
 
 
-    <div id="cardModeButton" class="cardModeButton">
-        <button type="button" id="have" class="btn btn-primary">있어요</button>
-        <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
-        <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
-        <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
-        <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
-    </div>
+        <div id="cardModeButton" class="cardModeButton">
+            <button type="button" id="have" class="btn btn-primary">있어요</button>
+            <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
+            <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
+            <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
+            <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
+        </div>
+        <p class="poka-info" style="margin-top:20px;font-weight:bold">[앨 범 포 카 ALBUM 앞 | 뒤] • [메이크스타 MAKESTAR] </p>
 
-        <span>
-            <div id="TAE" class="poka-holder">
-                <b>태환</b>
-            </div>
-        </span>
+        <div id="TAE" class="poka-holder">
+            <b>태환</b>
+        </div>
 
         <div id="GON" class="poka-holder">
             <b>원서</b>
@@ -70,6 +69,9 @@
         <div id="ALL" class="poka-holder">
             <b>단체</b>
         </div>
+        <div id="ALL2" class="poka-holder">
+            <b>단체2</b>
+        </div>
         <br>
         <p>photo scan by <i>@hamzzihyesung</i></p>
     </div>
@@ -83,29 +85,35 @@
         let AHX = "4 AHX"
         let YGW = "5 YGW"
         let ALL = "6 ALL"
-        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
+        let ALL2 = "7 ALL2"
+        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL, ALL2]
         //멤버 별 포카 개수
-        let pkNum_byMem = 1
+        let pkNum_byMem = 3
 
         //포카 넣기
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
-
-                if (m != "6 ALL") {
-                    temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m}.jpg" onclick="changeImage(this)">`
+                if (m != "6 ALL" && m != "7 ALL2") {
+                    temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
                     let poka_div_id = "#" + m.substr(2)
                     $(poka_div_id).append(temp_html)
                     console.log(temp_html, poka_div_id)
-                } else {
-                    pkNum_byMem_temp = 2
-                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
-                        temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m} (${j}).jpg" onclick="changeImage(this)">`
-                        let poka_div_id = "#" + m.substr(2)
-                        $(poka_div_id).append(temp_html)
-                        console.log(temp_html, poka_div_id)
-                    }
-
                 }
+                else if (m == "6 ALL") {
+                    temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
+                else if (m == "7 ALL2") {
+                    console.log("yes")
+                    temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    console.log(poka_div_id)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
+
 
 
 

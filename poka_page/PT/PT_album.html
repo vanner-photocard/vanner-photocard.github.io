@@ -47,6 +47,8 @@
             <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
         </div>
 
+        <p class="poka-info" style="margin-top:20px;font-weight:bold">[앨범 포카 (3종) 앞 | 뒤]</p>
+
 
 
         <div id="TAE" class="poka-holder">
@@ -66,7 +68,7 @@
             <b>영광</b>
         </div>
         <br>
-        <p>photo scan by <i>@chunsam_VVS</i></p>
+        <p>photo scan by <i>@chunsam_VVS & @NyuNyuVVS</i></p>
     </div>
 
     <script>
@@ -79,13 +81,13 @@
         let ALL = "6 ALL"
         let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
         //멤버 별 포카 개수
-        let pkNum_byMem = 3
+        let pkNum_byMem = 4
 
         //포카 넣기
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-                temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/앨범/${m} (${i}).jpg" onclick="changeImage(this)">`
+                temp_html = `<img class="poka" src="image/2023/PEAKTIME/피크타임 앨범/앨범/${m} (${i}).jpg" onclick="changeImage(this)" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png'">`
                 let poka_div_id = "#" + m.substr(2)
                 $(poka_div_id).append(temp_html)
                 console.log(temp_html, poka_div_id)
