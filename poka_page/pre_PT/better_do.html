@@ -74,6 +74,9 @@
         <div id="ALL" class="poka-holder">
             <b>단체</b>
         </div>
+        <div id="ALL2" class="poka-holder">
+            <b>단체2</b>
+        </div>
         <br>
         <p>photo scan by <i> @hamzzihyesung | @hamzzihyesung & @??? | @hamzzihyesung & @???</i></p>
     </div>
@@ -87,7 +90,8 @@
         let AHX = "4 AHX"
         let YGW = "5 YGW"
         let ALL = "6 ALL"
-        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
+        let ALL2 = "7 ALL2"
+        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL, ALL2]
         //멤버 별 포카 개수
         let pkNum_byMem = 5
 
@@ -109,7 +113,7 @@
                 }
                 else if (m == "7 ALL2") {
                     console.log("yes")
-                    temp_html = `<img class="poka" src="image/2019_2022/미쳐버려 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
+                    temp_html = `<img class="poka" src="image/2019_2022/배로두배로 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/clear_blank.png';">`
                     let poka_div_id = "#" + m.substr(2)
                     console.log(poka_div_id)
                     $(poka_div_id).append(temp_html)
