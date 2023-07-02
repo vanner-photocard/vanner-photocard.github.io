@@ -57,3 +57,9 @@
             margin: 10px;
             /* display:inline-block; */
         }
+
+        
+        p.pokaInfo {
+            margin-top:20px;
+            font-weight:bold
+        }
