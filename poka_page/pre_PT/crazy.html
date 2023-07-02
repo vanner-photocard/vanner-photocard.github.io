@@ -35,11 +35,9 @@
     </div>
 
     <div class="cardHolder">
-        <h3> 1st Single [5cean : V] (미쳐버려)<button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
+        <h3> 1st Single [5cean : V] (미쳐버려) <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
                 숨기기/보여주기</button>
         </h3>
-
-
 
         <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
@@ -53,7 +51,6 @@
         <div id="TAE" class="poka-holder">
             <b>태환</b>
         </div>
-
         <div id="GON" class="poka-holder">
             <b>원서</b>
         </div>
@@ -113,55 +110,11 @@
                     $(poka_div_id).append(temp_html)
                     console.log(temp_html, poka_div_id)
                 }
-
-
-
-
-
             }
         })
 
-
-
-
-
-        // 카드 상태 수정
-        let cardMode = ""
-        $("button").click(function () {
-            cardMode = ""
-            let id = this.id
-            cardMode = id
-            console.log(cardMode)
-        });
-
-        function changeImage(image) {
-            if (cardMode == "have") {
-                image.style.opacity = "1";
-            } else if (cardMode == "not_have") {
-                image.style.opacity = "0.5";
-            } else if (cardMode == "want") {
-                image.style.backgroundColor = "rgb(200,0,0)";
-                image.style.opacity = "0.8";
-            } else if (cardMode == "want_exchangeable") {
-                image.style.backgroundColor = "rgb(100,200,150)";
-                image.style.opacity = "1";
-            } else if (cardMode == "reset") {
-                image.style.backgroundColor = "rgb(255,255,255)"
-                image.style.opacity = "0.5";
-            }
-        }
-
-        function buttonHide() {
-            let x = document.getElementById("cardModeButton");
-
-            console.log(x.style.display + " yes")
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
     </script>
+    <script src="./poka_page.js"></script>
 
 </body>
 
