@@ -1,8 +1,6 @@
 
 * {
     font-family: "Gowun Dodum", sans-serif;
-
-    /* background-color:black; */
     
 }
 
@@ -21,7 +19,7 @@ h3 {
 
 
 div.header {
-    padding-top:150px;
+    padding-top:250px;
     padding-bottom:50px;
     width: 100%;
     height:auto;
