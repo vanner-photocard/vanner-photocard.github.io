@@ -1,66 +1,65 @@
 
-        * {
-            font-family: "Gowun Dodum", sans-serif;
+* {
+    font-family: "Gowun Dodum", sans-serif;
 
-            /* background-color:black; */
-            
-        }
+    /* background-color:black; */
+    
+}
 
-        h1 {
-            font-size: 50px;
-            background-color: rgb(255, 255, 255, 0.3);
-        }
+h1 {
+    font-size: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
 
-        h3 {
-            font-size: 30px;
-            font-weight: bold;
-            padding: 60px;
-            margin:0;
-        }
-
-        img.poka {
-            width: 150px;
-            height: 225px;
-            margin: 3px;
-            padding: 8px;
-            opacity: 1;
-            border-radius: 25px;
-            /* box-shadow: 1px 1px 0px 0px lightgrey; */
-
-        }
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px;
+    margin:0;
+}
 
 
 
+div.header {
+    padding-top:150px;
+    padding-bottom:50px;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)),
+        url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-        div.header {
-            padding: 30px;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-image: linear-gradient(0deg,
-                    rgba(255, 255, 255, 0.3),
-                    rgba(255, 255, 255, 0.3)),
-                url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+}
 
-        }
+div.cardModeButton {
+    text-align: center;
+    display: block;
+}
 
-        div.cardModeButton {
-            text-align: center;
-            display: block;
-        }
+img.poka {
+    width: 150px;
+    height: 225px;
+    margin: 3px;
+    padding: 8px;
+    opacity: 1;
+    border-radius: 25px;
+    /* box-shadow: 1px 1px 0px 0px lightgrey; */
 
+}
 
-        div.cardHolder {
-            text-align: center;
-        }
+div.cardHolder {
+    text-align: center;
+}
 
-        p.pokaInfo {
-            margin-top:20px;
-            font-weight:bold
-        }
+p.pokaInfo {
+    margin-top:20px;
+    font-weight:bold
+}
