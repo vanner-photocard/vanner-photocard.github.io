@@ -24,58 +24,58 @@
 <body>
 
 
-    <div class="header"  style="background-image:linear-gradient(0deg,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2)), url('https://pbs.twimg.com/media/FzZXobYaYAAN3E9?format=jpg&name=4096x4096')">
-
-        <h1>VANNER Photo Card ARCHIVE</h1>
-
-        <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
-                href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
-        <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기</a>
+    <div class="header" style="background-image:linear-gradient(0deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)), url('./image/bucon2.png')">
+        <div class="header-info">
+            <h1>VANNER Photo Card ARCHIVE</h1>
+            created by<a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a>   |   &nbsp&nbsp포토카드 저작권 :<a
+                    href="https://twitter.com/VannerOfficial">@VannerOfficial</a>  <br>
+            <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기 </a><button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button>
+        </div>
     </div>
 
-<div class="main" style="background-image:url('')">
+    <div class="main" style="background-image:url('')">
 
 
-    <div class="cardHolder">
-        <h3>이스터에그같지만 사실은 그냥 테스트용 페이지입니다 (모바일 뷰 확인용)
-            <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button>
-        </h3>
+        <div class="cardHolder">
+            <h3>이스터에그같지만 사실은 그냥 테스트용 페이지입니다 (모바일 뷰 확인용)
+                
+            </h3>
 
 
-        <div id="cardModeButton" class="cardModeButton">
-            <button type="button" id="have" class="btn btn-primary">있어요</button>
-            <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
-            <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
-            <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
-            <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
-        </div>
-        <p class="pokaInfo">[종류 1] • [종류 2]  • [종류 3 앞 | 뒤]</p>
+            <div id="cardModeButton" class="cardModeButton">
+                <button type="button" id="have" class="btn btn-primary">있어요</button>
+                <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
+                <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
+                <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
+                <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
+            </div>
+            <p class="pokaInfo">[종류 1] • [종류 2] • [종류 3 앞 | 뒤]</p>
 
-        <div id="TAE" class="poka-holder">
-            <b>태환</b>
-        </div>
+            <div id="TAE" class="poka-holder">
+                <b>태환</b>
+            </div>
 
-        <div id="GON" class="poka-holder">
-            <b>원서</b>
+            <div id="GON" class="poka-holder">
+                <b>원서</b>
+            </div>
+            <div id="HYE" class="poka-holder">
+                <b>혜성</b>
+            </div>
+            <div id="AHX" class="poka-holder">
+                <b>성국</b>
+            </div>
+            <div id="YGW" class="poka-holder">
+                <b>영광</b>
+            </div>
+            <div id="ALL" class="poka-holder">
+                <b>단체</b>
+            </div>
+            <br>
+            <p>photo scan by <i>@??? | @???</i></p>
         </div>
-        <div id="HYE" class="poka-holder">
-            <b>혜성</b>
-        </div>
-        <div id="AHX" class="poka-holder">
-            <b>성국</b>
-        </div>
-        <div id="YGW" class="poka-holder">
-            <b>영광</b>
-        </div>
-        <div id="ALL" class="poka-holder">
-            <b>단체</b>
-        </div>
-        <br>
-        <p>photo scan by <i>@??? | @???</i></p>
     </div>
-</div>
     <script>
         // 카드 폴더에서 업로드하기
         let TAE = "1 TAE"
