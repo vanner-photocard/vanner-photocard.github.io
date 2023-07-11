@@ -20,23 +20,32 @@
     <link rel="stylesheet" href="./poka_page.css">
 
 </head>
+<style>
+    div.header {
+        background-image: linear-gradient(0deg,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3)),
+            /* url("https://i.ytimg.com/vi/xmqkYZ5W3dM/maxresdefault.jpg"); */
+    }
+</style>
+
 
 <body>
-
-
     <div class="header">
+        <span class="text">
 
-        <h1>VANNER Photo Card ARCHIVE</h1>
-        <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
-                href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
-                <a href="/index.html" class="btn btn-outline-secondary btn-sm" >메인으로 돌아가기</a>
+            <h1>VANNER Photo Card ARCHIVE</h1>
+
+            <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
+                    href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
+            <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기</a> <button
+                class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">표시 버튼 숨기기/보여주기</button>
+        </span>
+
     </div>
 
     <div class="cardHolder">
-        <h3>PEAKTIME 잠실 콘서트 ALL MD 미공개 포토카드 <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼
-                숨기기/보여주기</button>
-
-        </h3>
+        <h3>PEAKTIME 잠실 콘서트 ALL MD 미공개 포토카드</h3>
 
         <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>

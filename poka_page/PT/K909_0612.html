@@ -21,32 +21,43 @@
 
 </head>
 
+<style>
+    div.header {
+        background-image: linear-gradient(0deg,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3)),
+            url("https://i.ytimg.com/vi/xmqkYZ5W3dM/maxresdefault.jpg");
+    }
+</style>
+
+
 <body>
-
-
     <div class="header">
+        <span class="text">
 
-        <h1>VANNER Photo Card ARCHIVE</h1>
+            <h1>VANNER Photo Card ARCHIVE</h1>
 
-        <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
-                href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
-                <a href="/index.html" class="btn btn-outline-secondary btn-sm" >메인으로 돌아가기</a>
+            <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
+                    href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
+            <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기</a> <button
+                class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">표시 버튼 숨기기/보여주기</button>
+        </span>
+
     </div>
 
-    
+
     <div id="title" class="cardHolder">
         <h3> JTBC K909 '프라임타임' (230612) 공방 포토카드
-            <button class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">버튼 숨기기/보여주기</button>
         </h3>
 
-    <div id="cardModeButton" class="cardModeButton">
-        <button type="button" id="have" class="btn btn-primary">있어요</button>
-        <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
-        <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
-        <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
-        <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
-</div>
-    <p class="pokaInfo">앞면 | 뒷면 </p>
+        <div id="cardModeButton" class="cardModeButton">
+            <button type="button" id="have" class="btn btn-primary">있어요</button>
+            <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
+            <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
+            <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
+            <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
+        </div>
+        <p class="pokaInfo">앞면 | 뒷면 </p>
 
 
         <div id="TAE" class="poka-holder">
@@ -85,28 +96,28 @@
         let pkNum_byMem = 2
 
 
-                //포카 넣기
-                MEM_ARR.forEach((m) => {
+        //포카 넣기
+        MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
 
 
 
-                    pkNum_byMem_temp = 1
-                    for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
-                        temp_html = `<img class="poka" src="image/2023/PEAKTIME/K909 공방포카 (0612)/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
-                        let poka_div_id = "#" + m.substr(2)
-                        $(poka_div_id).append(temp_html)
-                        console.log(temp_html, poka_div_id)
-                    }
+                pkNum_byMem_temp = 1
+                for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
+                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/K909 공방포카 (0612)/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
+                    let poka_div_id = "#" + m.substr(2)
+                    $(poka_div_id).append(temp_html)
+                    console.log(temp_html, poka_div_id)
+                }
 
-                
+
 
 
             }
         })
-</script>
-<script src="./poka_page.js"></script>
+    </script>
+    <script src="./poka_page.js"></script>
 
 </body>
 
