@@ -28,7 +28,7 @@ div.header {
     background-image: linear-gradient(0deg,
             rgba(255, 255, 255, 0.3),
             rgba(255, 255, 255, 0.3)),
-        url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+        url("https://pbs.twimg.com/media/F1FTVBhaIAYmH__?format=jpg&name=large");
     background-position: center;
     background-size: cover;
     display: flex;
