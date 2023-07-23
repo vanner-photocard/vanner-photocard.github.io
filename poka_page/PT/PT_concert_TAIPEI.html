@@ -56,7 +56,7 @@
         <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
     </div>
 
-    <p class="pokaInfo">[낮공연 (1PM)] • [밤공연 (7PM)]</p>
+    <p class="pokaInfo">[낮공연 (1PM) 앞|뒤 ] • [밤공연 (7PM) 앞|뒤 ]</p>
 
         <div id="ALL" class="poka-holder">
             <b>단체</b>
@@ -74,9 +74,10 @@
         let AHX = "4 AHX"
         let YGW = "5 YGW"
         let ALL = "6 ALL"
-        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL]
+        let ALL2 = "7 ALL2"
+        let MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL, ALL2]
         //멤버 별 포카 개수
-        let pkNum_byMem = 2
+        let pkNum_byMem = 4
 
         //포카 넣기
         MEM_ARR.forEach((m) => {
