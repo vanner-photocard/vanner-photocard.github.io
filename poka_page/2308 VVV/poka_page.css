@@ -18,9 +18,9 @@ h3 {
     margin: 0;
 }
 
-h4 {
-    padding-bottom:20px;
-}
+/* h4 {
+    padding:10px;
+} */
 
 div.header {
     padding-top: 250px;
@@ -48,6 +48,7 @@ div>span.text {
 }
 
 div.cardModeButton {
+    padding-top: 30px;
     text-align: center;
     display: block;
 }
