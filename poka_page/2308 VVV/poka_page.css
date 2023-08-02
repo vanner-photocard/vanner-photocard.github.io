@@ -13,11 +13,14 @@ h1 {
 h3 {
     font-size: 30px;
     font-weight: bold;
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom:10px;
     margin: 0;
 }
 
-
+h4 {
+    padding-bottom:20px;
+}
 
 div.header {
     padding-top: 250px;
@@ -29,7 +32,7 @@ div.header {
             rgba(255, 255, 255, 0.3),
             rgba(255, 255, 255, 0.3)),
         url("./image/header.jpeg");
-    background-position: top;
+    background-position:top;
     background-size: cover;
     display: flex;
     flex-direction: column;
