@@ -18,49 +18,21 @@
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
     <link rel="stylesheet" href="./poka_page.css">
-
-</head>
-
-<style>
-    div.header {
-        background-image: linear-gradient(0deg,
-                rgba(255, 255, 255, 0.3),
-                rgba(255, 255, 255, 0.3)),
-            /* url("./image/header.jpeg"); */
-    }
-</style>
-
+    <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
+</head> 
 
 <body>
-    <div class="header">
-        <span class="text">
-
-            <h1>VANNER Photo Card ARCHIVE</h1>
-
-            <p>by <a href="https://twitter.com/NyuNyuVVS">@NyuNyuVVS</a> | 포토카드 저작권: <a
-                    href="https://twitter.com/VannerOfficial">@VannerOfficial</a> </p>
-            <a href="/index.html" class="btn btn-outline-secondary btn-sm">메인으로 돌아가기</a> <button
-                class="btn btn-outline-secondary btn-sm" onclick="buttonHide()">표시 버튼 숨기기/보여주기</button>
-        </span>
-
-    </div>
+    <div class="headerDiv"></div>
 
 
     <div id="title" class="cardHolder">
-        <h3> VANNER 1st Mini Album: [VENI VIDI VICI] 앨범 포토카드
-        </h3>
+        <h3> VANNER 1st Mini Album: [VENI VIDI VICI] <br> 앨범 포토카드</h3>
         <h4> VICTORY BANNER & VOYAGE OF DREAMS ver (공통)</h4>
-        
+        <div class="cardModeDiv"></div>
 
-        <div id="cardModeButton" class="cardModeButton">
-            <button type="button" id="have" class="btn btn-primary">있어요</button>
-            <button type="button" id="not_have" class="btn btn-secondary">없어요</button>
-            <button type="button" id="want" class="btn btn-danger">이 카드를 원해요</button>
-            <button type="button" id="want_exchangeable" class="btn btn-success">이 카드로 교환 구해요</button>
-            <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
-        </div>
+        <!-- 포카 정보 있는 경우 아래에다가 표시 -->
         <p class="pokaInfo"></p>
-
+       <!-- <span id="cards" class="cardSpan"></span> -->
 
         <div id="TAE" class="poka-holder">
             <b>태환</b>
@@ -103,8 +75,6 @@
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
 
-
-
                 pkNum_byMem_temp = 1
                 for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
                     temp_html = `<img class="poka" src="image/2023/PEAKTIME/K909 공방포카 (0612)/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
@@ -114,13 +84,10 @@
                 }
 
 
-
-
             }
         })
     </script>
     <script src="./poka_page.js"></script>
-
 </body>
 
 </html>

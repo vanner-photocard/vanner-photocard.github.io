@@ -1,6 +1,7 @@
 * {
-    font-family: "Gowun Dodum", sans-serif;
-    color:navy;
+    font-family: "neutronic-hangeul", sans-serif;
+
+    color: navy;
     /* background-color:black; */
 
 }
@@ -8,24 +9,34 @@
 h1 {
     font-size: 50px;
     background-color: rgb(255, 255, 255, 0.3);
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: bold;
+    font-family: "roc-grotesk-condensed","neutronic-hangeul", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 38px;
     padding-top: 60px;
     padding-bottom: 10px;
     margin: 0;
-    color:aliceblue;
+    color: aliceblue;
+
 }
 
 h4 {
-    color:aliceblue;
+    font-family: "wedding-gothic-atf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
 }
 
 div.header {
     padding-top: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 100%;
     height: auto;
     text-align: center;
@@ -47,14 +58,15 @@ div.header {
 div>span.text {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
-    
+
 
 }
 
 div.cardModeButton {
     padding-top: 30px;
     text-align: center;
-    display: block;}
+    display: none;
+}
 
 img.poka {
     width: 150px;
@@ -74,16 +86,15 @@ div.cardHolder {
             rgba(255, 255, 255, 0.3)),
         url("https://doda-static.com/img/1200/80/1/1/1690960564203-4126019.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 
 }
-div.cardHolder>p{
-padding-bottom:50px;
-margin:0px;
-color:aliceblue
+
+div.cardHolder>p {
+    padding-top:20px;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: azure;
+    font-weight: 400;
 }
 
-p.pokaInfo {
-    margin-top: 20px;
-    font-weight: bold;
-}
