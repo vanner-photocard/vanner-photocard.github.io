@@ -77,7 +77,7 @@
 
                 pkNum_byMem_temp = 1
                 for (let j = 1; j < pkNum_byMem_temp + 1; j++) {
-                    temp_html = `<img class="poka" src="image/2023/PEAKTIME/K909 공방포카 (0612)/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
+                    temp_html = `<img class="poka" src="image//${m}(${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
                     let poka_div_id = "#" + m.substr(2)
                     $(poka_div_id).append(temp_html)
                     console.log(temp_html, poka_div_id)
