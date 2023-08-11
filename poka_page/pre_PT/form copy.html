@@ -27,6 +27,24 @@
                 rgba(255, 255, 255, 0.3)),
             url("https://i.scdn.co/image/ab67616d0000b2733902f219ff5c78e5909bad78");
     }
+
+    table {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+
+    tbody {
+        display:flex;
+    }
+
+    th,
+    td {
+        display: block
+    }
 </style>
 
 
@@ -46,7 +64,7 @@
 
     <div class="cardHolder">
         <h3> 2th Single [생(生)] (폼 Form)</h3>
-        
+
 
         <div id="cardModeButton" class="cardModeButton">
             <button type="button" id="have" class="btn btn-primary">있어요</button>
@@ -56,26 +74,41 @@
             <button type="button" id="reset" class="btn btn-link">교환정보(테두리) 리셋</button>
         </div>
 
-        <p class="pokaInfo">[앨범 포토카드: 앞 | 뒤] • [메이크스타 (2종)] • [Studio PAV] </p>
 
+        <table>
+            <thead>
+                <tr>
+                    <th>멤버명</th>
+                    <th>앨범 포토카드: 앞</th>
+                    <th>앨범 포토카드: 뒤</th>
+                    <th>[메이크스타 (2종)]</th>
+                    <th>[메이크스타 (2종)]</th>
+                    <th>[Studio PAV]</th>
+                </tr>
 
-        <div id="TAE" class="poka-holder">
-            <b>태환</b>
-        </div>
-        <div id="GON" class="poka-holder">
-            <b>원서</b>
-        </div>
-        <div id="HYE" class="poka-holder">
-            <b>혜성</b>
-        </div>
-        <div id="AHX" class="poka-holder">
-            <b>성국</b>
-        </div>
-        <div id="YGW" class="poka-holder">
-            <b>영광</b>
-        </div>
-        <br>
-        <p>photo scan by <i>@hamzzihyesung | @hamzzihyesung & @hyesungsbee & @vvshuman & @y97__angel & @rica_chi | @hamzzihyesung</i></p>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <th id="TAE" class="poka-holder">태환</th>
+                </tr>
+                <tr>
+                    <th id="GON" class="poka-holder">원서</th>
+                </tr>
+                <tr>
+                    <th id="HYE" class="poka-holder">혜성</th>
+                </tr>
+                <tr>
+                    <th id="AHX" class="poka-holder">성국</th>
+                </tr>
+                <tr>
+                    <th id="YGW" class="poka-holder">영광</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>photo scan by <i>@hamzzihyesung | @hamzzihyesung & @hyesungsbee & @vvshuman & @y97__angel |
+                @hamzzihyesung</i></p>
     </div>
 
     <script>
@@ -94,7 +127,7 @@
         MEM_ARR.forEach((m) => {
             for (let i = 1; i < pkNum_byMem + 1; i++) {
 
-                temp_html = `<img class="poka" src="image/2019_2022/폼(FORM) 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';">`
+                temp_html = `<td><img class="poka" src="image/2019_2022/폼(FORM) 포토카드/${m} (${i}).jpg" onclick="changeImage(this)" onError="this.src='image/VPA WATERMARK_.png';"></td>`
                 let poka_div_id = "#" + m.substr(2)
                 $(poka_div_id).append(temp_html)
                 console.log(temp_html, poka_div_id)

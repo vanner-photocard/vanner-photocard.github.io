@@ -68,6 +68,10 @@ div.cardModeButton {
     display: none;
 }
 
+div>button {
+    margin: 5px;
+}
+
 img.poka {
     width: 150px;
     height: 225px;
