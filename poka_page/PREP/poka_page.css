@@ -7,14 +7,22 @@
 h1 {
     font-size: 50px;
     background-color: rgb(255, 255, 255, 0.3);
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 60px;
-    margin:0;
-    
+    font-family: "roc-grotesk","neutronic-hangeul", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 35px;
+    padding-top: 60px;
+    /* padding-bottom: 10px; */
+    margin: 0;
+    color: navy;
+
 }
 
 
@@ -40,23 +48,26 @@ div.header {
 
 div>span.text {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
+    padding: 15px;
     
 }
 
 div.cardModeButton {
+    padding-top: 10px;
+    margin-bottom:10px;
     text-align: center;
-    display: block;
+    /* display:none; */
+    visibility: hidden;
 }
 
 img.poka {
-    width: 150px;
-    height: 225px;
-    margin: 3px;
+    width: 160px;
+    height: 240px;
+    margin: 2px;
     padding: 8px;
     opacity: 1;
     border-radius: 25px;
-    /* box-shadow: 1px 1px 0px 0px lightgrey; */
+    /* box-shadow: 2px 1px 0px 0px lightgrey; */
 
 }
 
@@ -67,4 +78,26 @@ div.cardHolder {
 p.pokaInfo {
     margin-top:20px;
     font-weight:bold
+}
+
+.cardPan {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  overflow:scroll;
+  
+}
+.pokaHolder{
+    margin-top:5px;
+    display:block;
+
+}
+td {
+    padding: 15px;
+}
+
+b.pokaName {
+    padding-left:10px;
+    padding-right:10px;
+    background-color: rgba(36, 86, 215, 0.192);
 }

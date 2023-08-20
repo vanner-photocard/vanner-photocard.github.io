@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="VANNER 포카 아카이브" />
+    <meta property="og:description" content="VANNER 포토카드 아카이브" />
+    <meta property="og:image" content="https://pbs.twimg.com/media/FxCEFRQagAECszv?format=jpg&name=4096x4096"
+        style="align-content: center;" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
+    <title>VANNER 포카 아카이브</title>
+    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
+    <script src="./poka_page.js"></script>
+</head>
+
+<body>
+    <div class="headerDiv"></div>
+    <div id="title" class="cardHolder">
+        <h3 id="pageTitleH3"></h3>
+        <h4 id="pageTitleH4"></h4>
+
+        <div class="cardModeDiv"></div>
+        <table id="cardPan" class="cardPan">
+
+        </table>
+        <br>
+        <p>photo scan by <i id="scnName"></i></p>
+    </div>
+</body>
+
+
+<!-- 페이지별 수정 부분 여기부터 -->
+<style>
+    div.header {
+        background-image: linear-gradient(0deg,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3)),
+                url("./image/pre_PT_header_.jpg");
+    }
+</style>
+
+<script>
+    let pageNameH3= "피크타임 이전 콘서트 & 투어"
+    let pageNameH4 = "<br>OUR LOVE IS SUMMER- ONLINE CONCERT (210725)<br>VANNER 1000 Days Celebration Fanmeeting [ DESTINY💫] (211109)<br>POCKET FRIENDS TOUR in LA (220416-17)<br> CODE1 US BOOST UP TOUR (2203-04)"
+    let pokaArray = ['LIFE_4_CON_MDpoF51','LIFE_5_CON_MDpoF61','TAKEOFF_2_CON_MDpoF51','TAKEOFF_2_CON_MDpoB51','TAKEOFF_3_CON_MDpoF51']
+    let pokaName = ['OUR LOVE IS SUMMER', 'DESTINY💫', 'POCKET FRIENDS TOUR (앞)', 'POCKET FRIENDS TOUR (뒤)', 'CODE1 US BOOST UP TOUR']
+    let pokaAddress = "image/CONCERT/"
+    let scnName = "@hamzzihyesung | @hamzzihyesung | @hyesungsbee | @hyesungsbee"
+    pageSetter(pageNameH3, pageNameH4)
+    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+</script>
+
+<!-- 여기까지 -->
+
+
+<script src="./poka_page.js"></script>
+</html>
