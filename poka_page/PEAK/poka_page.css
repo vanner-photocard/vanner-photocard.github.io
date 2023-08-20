@@ -1,0 +1,103 @@
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    
+}
+
+h1 {
+    font-size: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "roc-grotesk","neutronic-hangeul", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 35px;
+    padding-top: 60px;
+    /* padding-bottom: 10px; */
+    margin: 0;
+    color: navy;
+
+}
+
+
+
+div.header {
+    padding-top:250px;
+    padding-bottom:50px;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)),
+        url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div>span.text {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    
+}
+
+div.cardModeButton {
+    padding-top: 10px;
+    margin-bottom:10px;
+    text-align: center;
+    /* display:none; */
+    visibility: hidden;
+}
+
+img.poka {
+    width: 160px;
+    height: 240px;
+    margin: 2px;
+    padding: 8px;
+    opacity: 1;
+    border-radius: 25px;
+    /* box-shadow: 2px 1px 0px 0px lightgrey; */
+
+}
+
+div.cardHolder {
+    text-align: center;
+}
+
+p.pokaInfo {
+    margin-top:20px;
+    font-weight:bold
+}
+
+.cardPan {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  overflow:scroll;
+  
+}
+.pokaHolder{
+    margin-top:5px;
+    display:block;
+
+}
+td {
+    padding: 15px;
+}
+
+b.pokaName {
+    padding-left:10px;
+    padding-right:10px;
+    background-color: rgba(36, 86, 215, 0.192);
+}
