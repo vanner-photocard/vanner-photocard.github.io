@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
-    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="../../base_poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
-    <script src="./poka_page.js"></script>
+    <script src="../../poka_page.js"></script>
 </head>
 
 <body>
@@ -38,16 +38,13 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1).replace('.html', "");
-    console.log(fileName)
-    let pokaAddress = "image/" + fileName + "/"
     let pageNameH3 = "PEAKTIME 콘서트 TAIPEI (0715)"
     let pageNameH4 = ""
     let pokaArray = ["PEAK_16_CON_MDpoF21" , "PEAK_16_CON_MDpoB21"]
     let pokaName = ["피크타임 대만 콘서트 선예매 포카 낮공연 (1PM)", "피크타임 대만 콘서트 선예매 포카 밤공연 (7PM)"]
     let scnName = "@Bobea_vanner"
     pageSetter(pageNameH3, pageNameH4)
-    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+    pokaAttacher(pokaArray, pokaName, scnName);
 </script>
 
 <style>
@@ -62,6 +59,6 @@
 
 <!-- 여기까지 -->
 
-<script src="./poka_page.js"></script>
+<script src="../../poka_page.js"></script>
 
 </html>

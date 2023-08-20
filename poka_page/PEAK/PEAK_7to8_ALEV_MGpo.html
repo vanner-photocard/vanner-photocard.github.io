@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
-    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="../../base_poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
-    <script src="./poka_page.js"></script>
+    <script src="../../poka_page.js"></script>
 </head>
 
 <body>
@@ -38,16 +38,13 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1).replace('.html', "");
-    console.log(fileName)
-    let pokaAddress = "image/" + fileName + "/"
     let pageNameH3 = "PEAKTIME 앨범 케타포 콜라보 카페 포카"
     let pageNameH4 = ""
     let pokaArray = ["PEAK_7_ALEV_MGpoF61", "PEAK_7_ALEV_MGpoB61", "PEAK_8_ALEV_MGpoF51"]
     let pokaName = ["케타포 카페 럭키드로우 (앞)", "케타포 카페 럭키드로우 (뒤)", "케타포 카페 음료포카"]
     let scnName = "@parkhsungg & @Bobea_vanner | @haengdobi_vivis"
     pageSetter(pageNameH3, pageNameH4)
-    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+    pokaAttacher(pokaArray, pokaName, scnName);
 </script>
 
 <style>
@@ -62,6 +59,6 @@
 
 <!-- 여기까지 -->
 
-<script src="./poka_page.js"></script>
+<script src="../../poka_page.js"></script>
 
 </html>

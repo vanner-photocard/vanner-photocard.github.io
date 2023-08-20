@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
-    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="../../base_poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
-    <script src="./poka_page.js"></script>
+    <script src="../../poka_page.js"></script>
 </head>
 
 <body>
@@ -38,16 +38,13 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1).replace('.html', "");
-    console.log(fileName)
-    let pokaAddress = "image/" + fileName + "/"
     let pageNameH3 = "PEAKTIME 앨범 사운드웨이브 콜라보 카페 포토카드"
     let pageNameH4 = ""
     let pokaArray = ["PEAK_9_ALEV_MGpoF61", "PEAK_9_ALEV_MGpoF52", "PEAK_10_ALEV_MGpoF51", "PEAK_11_ALEV_MGpoF51"]
     let pokaName = ["사웨 카페 랜덤 포토카드 (사복)", "사웨 카페 랜덤 포토카드 (스스퍼)", "사웨 카페 콜북 포토카드", "사웨 카페 폰탭 폴라로이드"]
     let scnName = "@chunsam_VVS & @wonseotime | @chunsam_VVS | @parkhsungg & @Bobea_vanner"
     pageSetter(pageNameH3, pageNameH4)
-    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+    pokaAttacher(pokaArray, pokaName, scnName);
 </script>
 
 <style>
@@ -62,6 +59,6 @@
 
 <!-- 여기까지 -->
 
-<script src="./poka_page.js"></script>
+<script src="../../poka_page.js"></script>
 
 </html>

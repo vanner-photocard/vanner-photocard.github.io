@@ -13,9 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
+    <link rel="stylesheet" href="../../base_poka_page.css">
     <link rel="stylesheet" href="./poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
-    <script src="./poka_page.js"></script>
+    <script src="../../poka_page.js"></script>
 </head>
 
 <body>
@@ -38,16 +39,13 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1).replace('.html', "");
-    console.log(fileName)
-    let pokaAddress = "image/" + fileName + "/"
     let pageNameH3 = "VANNER 1st Mini Album: [VENI VIDI VICI] <br> 팬싸인회 포토카드 (0901 - 0910)"
     let pageNameH4 = "FANSIGNING EVENT 0901 ~ 0910"
     let pokaArray = ["VVV_26_FS_MGpoF51", "VVV_27_FS_MGpoF51", "VVV_28_FS_MGpoF51", "VVV_29_FS_MGpoB51",]
     let pokaName = ["마뮤테 팬싸 영통 1차 (빵야)", "사운드웨이브 팬싸 대면 2차 (반쪽하트 B)", "사운드웨이브 팬싸 영통 2차 (굿나잇)", "케타포 팬싸 1차 (타코야끼)"]
     let scnName = "@???"
     pageSetter(pageNameH3, pageNameH4)
-    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+    pokaAttacher(pokaArray, pokaName, scnName);
 </script>
 
 <style>
@@ -62,6 +60,6 @@
 
 <!-- 여기까지 -->
 
-<script src="./poka_page.js"></script>
+<script src="../../poka_page.js"></script>
 
 </html>

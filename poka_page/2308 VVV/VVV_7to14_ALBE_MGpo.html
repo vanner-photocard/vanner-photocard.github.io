@@ -13,9 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
+    <link rel="stylesheet" href="../../base_poka_page.css">
     <link rel="stylesheet" href="./poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
-    <script src="./poka_page.js"></script>
+    <script src="../../poka_page.js"></script>
 </head>
 
 <body>
@@ -38,16 +39,13 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1).replace('.html', "");
-    console.log(fileName)
-    let pokaAddress = "image/" + fileName + "/"
     let pageNameH3 = "VANNER 1st Mini Album: [VENI VIDI VICI] <br>판매처 별 예약판매 미공개 포토카드"
     let pageNameH4 = ""
     let pokaArray = ["VVV_7_ALBE_MGpoF51", "VVV_8_ALBE_MGpoF51", "VVV_9_ALBE_MGpoF51", "VVV_10_ALBE_MGpoF51", "VVV_11_ALBE_MGpoF51", "VVV_12_ALBE_MGpoF51", "VVV_13_ALBE_MGpoF51", "VVV_14_ALBE_MGpoF51"]
     let pokaName = ["사운드웨이브 일반앨범 예약판매 미공개 포토카드 (사탕)", "사운드웨이브 플브앨범 예약판매 미공개 포토카드 (포토메시지)", "케타포 일반앨범 예약판매 미공개 포토카드", "모켓샵 일반앨범 예약판매 미공개 포토카드", "프롬스토어 일반앨범 예약판매 미공개 포토카드", "에버라인 일반앨범 예약판매 미공개 포토카드", "스펀지뮤직 플브앨범 예약판매 미공개 포토카드", "뮤직플랜트 플브앨범 예약판매 미공개 포토카드"]
     let scnName = "@???"
     pageSetter(pageNameH3, pageNameH4)
-    pokaAttacher(pokaArray, pokaName, pokaAddress, scnName);
+    pokaAttacher(pokaArray, pokaName, scnName);
 </script>
 
 <style>
@@ -62,6 +60,6 @@
 
 <!-- 여기까지 -->
 
-<script src="./poka_page.js"></script>
+<script src="../../poka_page.js"></script>
 
 </html>
