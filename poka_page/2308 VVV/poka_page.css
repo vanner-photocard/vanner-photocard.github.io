@@ -1,5 +1,5 @@
 * {
-    font-family: "neutronic-hangeul", sans-serif;
+    font-family: "Gowun Dodum", sans-serif;
 
     color: navy;
     /* background-color:black; */
@@ -10,43 +10,39 @@ h1 {
     font-size: 50px;
     background-color: rgb(255, 255, 255, 0.3);
     font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
 }
 
 h3 {
-    font-family: "roc-grotesk-condensed","neutronic-hangeul", sans-serif;
+    font-family: "roc-grotesk-condensed", "neutronic-hangeul", sans-serif;
     font-weight: 600;
     font-style: normal;
 
-    font-size: 38px;
+    font-size: 40px;
     padding-top: 60px;
     padding-bottom: 10px;
     margin: 0;
     color: aliceblue;
-
 }
 
 h4 {
     font-family: "wedding-gothic-atf", sans-serif;
     font-weight: 400;
-    font-style: normal;
     color: aliceblue;
 }
 
 div.header {
-    padding-top: 200px;
-    padding-bottom: 20px;
+    padding-top: 250px;
+    padding-bottom: 50px;
     width: 100%;
     height: auto;
     text-align: center;
     background-image: linear-gradient(0deg,
             rgba(255, 255, 255, 0.3),
             rgba(255, 255, 255, 0.3)),
-        url("./image/new_header.jpeg");
-    background-position-x: left;
-    background-position-y: center;
-    /* background-position: center; */
+        url("https://pbs.twimg.com/profile_banners/2896981806/1684338981/1500x500");
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -57,29 +53,25 @@ div.header {
 
 div>span.text {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-
-
+    padding: 15px;
 }
 
 div.cardModeButton {
-    padding-top: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    display: none;
-}
-
-div>button {
-    margin: 5px;
+    /* display:none; */
+    visibility: hidden;
 }
 
 img.poka {
-    width: 150px;
-    height: 225px;
-    margin: 3px;
+    width: 160px;
+    height: 240px;
+    margin: 2px;
     padding: 8px;
     opacity: 1;
     border-radius: 25px;
-    /* box-shadow: 1px 1px 0px 0px lightgrey; */
+    /* box-shadow: 2px 1px 0px 0px lightgrey; */
 
 }
 
@@ -91,14 +83,41 @@ div.cardHolder {
         url("https://doda-static.com/img/1200/80/1/1/1690960564203-4126019.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: repeat-y;
 
 }
 
-div.cardHolder>p {
-    padding-top:20px;
+p.pokaInfo {
+    margin-top: 20px;
+    font-weight: bold
+}
+
+.cardPan {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    overflow: scroll;
+
+}
+
+.pokaHolder {
+    margin-top: 5px;
+    display: block;
+
+}
+
+td {
+    padding: 15px;
+}
+
+b.pokaName {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+    background-color: rgba(9, 25, 64, 0.445);
+}
+
+.scnNameLine{
+    margin-bottom:0px;
     padding-bottom: 10px;
-    margin: 0px;
-    color: azure;
-    font-weight: 400;
 }
-
