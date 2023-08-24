@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="VANNER 포카 아카이브" />
+    <meta property="og:description" content="VANNER 포토카드 아카이브" />
+    <meta property="og:image" content="https://pbs.twimg.com/media/F2iNl3AXgAApOi4?format=jpg&name=large"
+        style="align-content: center;" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
+    <title>VANNER 포카 아카이브</title>
+    <link rel="stylesheet" href="../../base_poka_page.css">
+    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
+    <script src="../../poka_page.js"></script>
+</head>
+
+<body>
+    <div class="headerDiv"></div>
+    <div id="title" class="cardHolder">
+        <h3 id="pageTitleH3"></h3>
+        <h4 id="pageTitleH4"></h4>
+
+        <div class="cardModeDiv"></div>
+        <table id="cardPan" class="cardPan">
+
+        </table>
+        <br>
+        <p class="scnNameLine">photo scan by <i id="scnName"></i></p>
+    </div>
+</body>
+
+
+
+<!-- 페이지별 수정 부분 여기부터 -->
+
+<script>
+    let pageNameH3 = "VANNER 1st Mini Album: [VENI VIDI VICI] 콜라보 이벤트 & 럭드"
+    let pageNameH4 = "COLLABORATION EVENT & LUCKY DRAW"
+    let pokaArray = ["VVV_32_ALEV_MGpoF51", "VVV_33_ALEV_MGpoB51", "VVV_34_ALEV_MGpoF52"]
+    let pokaName = ["후즈팬 콜라보 카페 럭키드로우", "후즈팬 콜라보 카페 메시지카드 (뒷면)", "사운드웨이브 럭키드로우 유닛포카"]
+    let scnName = "@???"
+    pageSetter(pageNameH3, pageNameH4)
+    pokaAttacher(pokaArray, pokaName, scnName);
+</script>
+
+<style>
+    div.header {
+        background-image: linear-gradient(0deg,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3)),
+            url("https://pbs.twimg.com/media/F3vdbHebQAEqoUT?format=jpg&name=large");
+    }
+</style>
+
+
+<!-- 여기까지 -->
+
+<script src="../../poka_page.js"></script>
+
+</html>
