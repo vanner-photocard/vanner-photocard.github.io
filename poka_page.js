@@ -2,13 +2,12 @@
   $(".headerDiv").load("./common.html #header");
   $(".cardModeDiv").load("./common.html #cardModeButton");
   cardModeChanger();
-  let cardMode = ""
+  let cardMode = "have"
 
 
   // 카드 상태 수정
   function cardModeChanger() {
       $("button").click(function () {
-          cardMode = ""
           let id = this.id
           cardMode = id
       });
