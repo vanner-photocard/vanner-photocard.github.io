@@ -1,0 +1,37 @@
+* {
+    color: navy;
+    /* background-color:black; */
+}
+
+h3 {
+    font-family: "roc-grotesk-condensed", "neutronic-hangeul", sans-serif;
+
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+h4 {
+    font-family: "wedding-gothic-atf", sans-serif;
+    color: aliceblue;
+}
+
+div.header {
+    padding-top: 250px;
+}
+
+div.cardHolder {
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.3)),
+        url("https://doda-static.com/img/1200/80/1/1/1690960564203-4126019.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+
+}
+
+b.pokaName {
+    color: aliceblue;
+    background-color: rgba(9, 25, 64, 0.445);
+}

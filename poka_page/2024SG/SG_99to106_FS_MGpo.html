@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta property="og:title" content="VANNER 포카 아카이브" />
     <meta property="og:description" content="VANNER 포토카드 아카이브" />
-    <meta property="og:image" content="https://pbs.twimg.com/media/F38jLsUaQAAPsYU?format=jpg"
+    <meta property="og:image" content="https://pbs.twimg.com/media/F2iNl3AXgAApOi4?format=jpg&name=large"
         style="align-content: center;" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,6 +14,7 @@
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
     <title>VANNER 포카 아카이브</title>
     <link rel="stylesheet" href="../../base_poka_page.css">
+    <link rel="stylesheet" href="./poka_page.css">
     <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
     <script src="../../poka_page.js"></script>
 </head>
@@ -38,11 +39,17 @@
 <!-- 페이지별 수정 부분 여기부터 -->
 
 <script>
-    let pageNameH3 = "PEAKTIME 콘서트 예매특전 포토카드"
-    let pageNameH4 = " TAIPEI (0715), HONGKONG (1209)"
-    let pokaArray = ["PEAK_16_CON_MDpoF21" , "PEAK_16_CON_MDpoB21", "PEAK_21_CON_MGpoF11"]
-    let pokaName = ["TAIPEI 콘서트 낮공연 (1PM)", "TAIPEI 콘서트 밤공연 (7PM)", "HONGKONG 콘서트" ]
-    let scnName = "밤하늘 별처럼 빛나는 VVS✨"
+    let pageNameH3 = "2024 SEASON'S GREETINGS [VANNER HIGH SCHOOL] <br>예약판매, 팬싸인회 미공개 포토카드 "
+    let pageNameH4 = "PRE-ORDER BENEFITS & FANSIGNING EVENT"
+    let pokaArray = ['SG_99_ALBE_MGpoF51', 
+                    'SG_100_FS_MGpoF51','SG_101_FS_MGpoF51', 'SG_102_FS_MGpoF51', 'SG_102_FS_MGpoB51',
+                    'SG_103_FS_MGpoF51','SG_103_FS_MGpoB51',
+                    'SG_104_FS_MGpoF51','SG_105_FS_MGpoF51','SG_106_FS_MGpoF41']
+    let pokaName = ['메이크스타 예판 미공포', 
+                    '메이크스타 팬싸 대면 1차 (크리스마스)', '메이크스타 팬싸 영통 1차 (사탕)', '메이크스타 팬싸 1차 토끼담요 (앞)','메이크스타 팬싸 1차 토끼담요 (뒤)',
+                    '메이크스타 팬싸 대면 2차 (행운을 빌어용 - 앞)', '메이크스타 팬싸 대면 2차 (행운을 빌어용 - 뒤)',
+                    '메이크스타 팬싸 영통 2차 (호빵)', '메이크스타 팬싸 2차 교복증사', '메이크스타 태환혜성 생일 포토카드']
+    let scnName = "별처럼 빛나는 VVS"
     pageSetter(pageNameH3, pageNameH4)
     pokaAttacher(pokaArray, pokaName, scnName);
 </script>
@@ -52,11 +59,20 @@
         background-image: linear-gradient(0deg,
                 rgba(255, 255, 255, 0.3),
                 rgba(255, 255, 255, 0.3)),
-            url("https://preview.redd.it/peak-time-concert-your-time-v0-t75gm5pa8jya1.jpg?width=2250&format=pjpg&auto=webp&s=b550a03ac2c216dc3fe9449e92248f9842f9239c");
-    }
+            url("https://pbs.twimg.com/media/F_mYUlObYAAP_Ke?format=jpg&name=4096x4096");
+            background-position: center;
+            background-size: cover;}
 
+    div.cardHolder {
+    background-image: linear-gradient(0deg,
+            rgba(27, 20, 95, 0.5),
+            rgba(20, 62, 216, 0.838)),
+        url("");
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat-y;
 
-
+}
 </style>
 
 
