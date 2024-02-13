@@ -75,8 +75,11 @@ function pokaAttacher(pokaArray, pokaName, scnName) {
       let pokaName = POKA_NAME[p];
       // ALL까지 몇개있는지 & MEM_ARR 조정
       let pokaMember = parseInt(pokaDivID.substr(-2, 1))
+      console.log(pokaDivID, pokaName, pokaMember)
       if (pokaMember < 7) {
-          MEM_ARR = MEM_ARR.slice(0, pokaMember)
+          MEM_ARR = [TAE, GON, HYE, AHX, YGW, ALL1, ALL2].slice(0, pokaMember)
+          console.log(MEM_ARR)
+
       }
       // 멤버별 몇종있는지
       let pokaNumber = parseInt(pokaDivID.substr(-1, 1))
