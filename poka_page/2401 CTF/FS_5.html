@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="VANNER 포카 아카이브" />
+    <meta property="og:description" content="VANNER 포토카드 아카이브" />
+    <meta property="og:image" content="https://pbs.twimg.com/media/GEDQK1NWYAAROlO?format=jpg&name=4096x4096"
+        style="align-content: center;" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f48e.svg">
+    <title>VANNER 포카 아카이브</title>
+    <link rel="stylesheet" href="../../base_poka_page.css">
+    <link rel="stylesheet" href="./poka_page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhi8eeg.css">
+    <script src="../../poka_page.js"></script>
+</head>
+
+<body>
+    <div class="headerDiv"></div>
+    <div id="title" class="cardHolder">
+        <h3 id="pageTitleH3"></h3>
+        <h4 id="pageTitleH4"></h4>
+
+        <div class="cardModeDiv"></div>
+        <table id="cardPan" class="cardPan">
+
+        </table>
+        <br>
+        <p class="scnNameLine">photo scan by <i id="scnName"></i></p>
+    </div>
+</body>
+
+
+
+<!-- 페이지별 수정 부분 여기부터 -->
+
+<script>
+    let pageNameH3 = "VANNER 2ND Mini Album: [CAPTURE THE FLAG]<br> 팬싸인회 포토카드 (4월 1일 ~ 21일)"
+    let pageNameH4 = "FANSIGNING EVENT 1 APR. ~ 21 APR."
+    let pokaArray = ["CTF_110_FS_F51", "CTF_111_FS_F51", "CTF_112_FS_F51", "CTF_113_FS_F51",
+        "CTF_114_FS_F51", "CTF_115_FS_F51", "CTF_116_FS_F51", "CTF_117_FS_F51", "CTF_118_FS_F51",
+        "CTF_119_FS_F51", "CTF_120_FS_F51", "CTF_121_FS_F51", "CTF_122_FS_F51",
+        "CTF_123_FS_F51", "CTF_124_FS_F51", "CTF_125_FS_F51", "CTF_126_FS_F51", "CTF_127_FS_F51",
+        "CTF_128_FS_F51", "CTF_129_FS_F51", "CTF_130_FS_F51",
+        "CTF_131_FS_F51", "CTF_132_FS_F51",]
+
+    let pokaName = ["에버라인 대면 4차 (내가진짜야)", "에버라인 영통 4차 (거울하트)", "사운드웨이브 대면 3차 (미슐렝쉐프)", "사운드웨이브 영통 3차 (라따뚜이)",
+        "모켓샵 대면 4차 (LOVE ver)", "모켓샵 영통 4차 (쓰담쓰담 ver)", "메이크스타 대면 6차 (디스코핀)", "메이크스타 영통 6차 (리본)", "메이크스타 6차 투명 프레임 (피크닉)",
+        "점프업 대면 4차 (화관)", "점프업 영통 4차 (투명고글)", "사운드웨이브 대면 4차 (꽃게 머리띠)", "사운드웨이브 영통 4차 (덩굴장미)",
+        "에버라인 대면 5차 (긱시크)", "에버라인 영통 5차 (복숭아 누르지 마세요)", "메이크스타 대면 7차 (자화상)", "메이크스타 영통 7차 (비눗방울)", "메이크스타 7차 (하트찢고나온)",
+        "사운드웨이브 그룹포토 (이모티콘 머리띠)", "사운드웨이브 대면 5차 (개나리꽃)", "사운드웨이브 영통 5차 (인중피어싱)",
+        "애플뮤직 대면 1차 (뿌잉)", "애플뮤직 영통 1차 (Y2K)",
+
+
+    ]
+    let scnName = "수많은 VVS❤️✨"
+    pageSetter(pageNameH3, pageNameH4)
+    pokaAttacher(pokaArray, pokaName, scnName);
+</script>
+
+<style>
+    div.header {
+        background-image:
+            url("https://qvogmfjdivslqlaioqyg.supabase.co/storage/v1/object/public/photocard/2401%20CTF/CTF%20header%20(1).jpg");
+    }
+
+    div.cardHolder {
+        background-image: linear-gradient(0deg,
+                rgba(143, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.7)),
+            url("https://pbs.twimg.com/media/GDkOyhObcAAlqdM?format=jpg&name=4096x4096");
+        background-position: top;
+        background-size: cover;
+        background-repeat: repeat-y;
+
+    }
+</style>
+
+<!-- 여기까지 -->
+
+<script src="../../poka_page.js"></script>
+
+</html>
